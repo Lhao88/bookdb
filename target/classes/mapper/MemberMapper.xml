@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lhao.bookdb.mapper.MemberMapper">
+
+    <resultMap id="BaseResultMap" type="com.lhao.bookdb.bean.Member">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="mName" column="m_name" jdbcType="VARCHAR"/>
+            <result property="pwd" column="pwd" jdbcType="VARCHAR"/>
+            <result property="typeId" column="type_id" jdbcType="INTEGER"/>
+            <result property="balance" column="balance" jdbcType="FLOAT"/>
+            <result property="regdate" column="regdate" jdbcType="DATE"/>
+            <result property="tel" column="tel" jdbcType="CHAR"/>
+            <result property="idnumber" column="idNumber" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,m_name,pwd,
+        type_id,balance,regdate,
+        tel,idNumber
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lhao.bookdb.mapper.MembertypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.lhao.bookdb.bean.Membertype">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="mtName" column="mt_name" jdbcType="VARCHAR"/>
+            <result property="amount" column="amount" jdbcType="INTEGER"/>
+            <result property="discount" column="discount" jdbcType="INTEGER"/>
+            <result property="recharge" column="recharge" jdbcType="INTEGER"/>
+            <result property="keepday" column="keepDay" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,mt_name,amount,
+        discount,recharge,keepDay
+    </sql>
+</mapper>
