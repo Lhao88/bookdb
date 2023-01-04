@@ -5,6 +5,20 @@ spring:
       url: jdbc:mysql://localhost:3306/bookdb2?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: root
       password: 123456
-
-
-
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 50MB
+      location: src\main\resources\static\Images\cover
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+pagehelper:
+  propertyName: propertyValue
+  reasonable: false
+  defaultCount: true # 分页插件默认参数支持 default-count 形式，自定义扩展的参数，必须大小写一致

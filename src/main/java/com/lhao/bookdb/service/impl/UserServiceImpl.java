@@ -30,6 +30,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         User user = userMapper.selectOne(queryWrapper);
         return user;
     }
+
+    @Override
+    public void updatePwdById(User user) {
+        userMapper.updateById(user);
+    }
+
+
 }
 
 

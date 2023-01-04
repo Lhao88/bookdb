@@ -1,5 +1,8 @@
 package com.lhao.bookdb.bean;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +13,7 @@ import java.util.Map;
  * @Date 2022/9/12 14:14
  * @Version 1.0
  **/
-public class Message {
+public class Message implements Serializable {
 
     private String code;
 
@@ -39,4 +42,7 @@ public class Message {
         this.data.put(key, obj);
         return this;
     }
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = 1L;
 }

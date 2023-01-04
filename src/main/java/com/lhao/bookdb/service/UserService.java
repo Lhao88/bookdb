@@ -9,4 +9,6 @@ import com.lhao.bookdb.bean.User;
 public interface UserService extends IService<User> {
 
     User check(String name, String pwd);
+
+    void updatePwdById(User user);
 }

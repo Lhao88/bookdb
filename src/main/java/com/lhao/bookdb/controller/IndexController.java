@@ -18,7 +18,7 @@ public class IndexController {
      * @return
      * @Description:To:登录页面
      */
-    @RequestMapping(value = {"/", "/login"})
+    @RequestMapping(value = {"/", "/login.html"})
     public String login() {
         return "login";
     }

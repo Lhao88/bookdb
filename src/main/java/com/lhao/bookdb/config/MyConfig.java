@@ -43,6 +43,14 @@ public class MyConfig {
         return defaultKaptcha;
     }
 
+//    @Bean
+//    MybatisPlusInterceptor mybatisPlusInterceptor() {
+//
+//        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+//        interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+//        return interceptor;
+//    }
+    
 
 }
 
